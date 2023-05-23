@@ -6,16 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Welcome to the beach</title>
-    <div class="wrapper">
-       <div class="first-view">
-        <h1>welcome to the beach</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, odio mollitia voluptatum ducimus minim
-        </p>
-        <button class="more">read more</button>
-       </div> 
-    </div>
+    <script>
+        function showMore() {
+  var x = document.getElementById("show-more");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+};
+    </script>
 </head>
-<body>
-    
-</body>
+    <body>
+        <div class="wrapper">
+            <div class="first-view">
+                <header class="main-header">
+                    <h1>welcome to the beach</h1>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, odio mollitia voluptatum ducimus minim
+                    </h3>
+                    <button onclick="showMore()" class="button-more">read more</button>
+                </header>
+            </div> 
+            <section id="show-more">
+                <article class="painted">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minima molestias amet nulla ex accusamus deserunt dolorem fuga labore, voluptates repellat suscipit veniam quae, facilis omnis rerum incidunt expedita officiis.
+                    Placeat, qui officia! Tempore aliquam sequi rerum tempora debitis cumque quae fugiat, nulla sed laborum adipisci officiis iste minus quasi deleniti, architecto minima? Ab animi harum explicabo quidem minima laborum.</p>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptas deserunt ea commodi alias! Facere tempore sed quam recusandae hic officiis. Temporibus laboriosam voluptatem ipsum, id facere molestiae qui aliquid.
+                    Blanditiis et minima delectus repellat porro vel praesentium. Itaque at sunt quis ipsam nulla veritatis natus placeat repellat fuga tempora iusto deleniti aliquam officia nostrum minima dolorem, similique modi cumque.</p>
+                </article>
+                <footer >
+                    <p class="painted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga expedita deleniti aspernatur illo, perferendis quis, eum aut vel aperiam, fugit harum et id ad voluptas. Nemo, deleniti! Cupiditate, dolor ad!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga expedita deleniti aspernatur illo, perferendis quis, eum aut vel aperiam, fugit harum et id ad voluptas. Nemo, deleniti! Cupiditate, dolor ad!</p>
+                    <p class="painted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga expedita deleniti aspernatur illo, perferendis quis, eum aut vel aperiam, fugit harum et id ad voluptas. Nemo, deleniti! Cupiditate, dolor ad!</p>
+                </footer>
+            </section>
+        </div>
+    </body>
+   
 </html>
