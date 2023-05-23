@@ -46,6 +46,7 @@ footer {
 }
 
 .button-more {
+    font-size:calc(var(--size1) + var(--adaptive));
     color: var(--main-color);
     width: 150px;
     height: 40px;
