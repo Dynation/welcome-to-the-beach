@@ -69,9 +69,12 @@ footer {
 }
 
 .show-more {
-    padding: calc(var(--size1) + var(--adaptive));
     width: 100% ;
     padding: 5% auto;
+}
+
+#show-more {
+    display: none;
 }
 
 @media screen and (min-width: 1921px) {
