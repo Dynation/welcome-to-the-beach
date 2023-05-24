@@ -70,10 +70,11 @@ footer {
 .show-more {
     width: 100% ;
     padding: 5% auto;
+    position: relative;
+    z-index: 5;
 }
 
 #show-more {
-    display: none;
     font-size: calc(var(--size0) + var(--adaptive));
 }
 
@@ -97,6 +98,9 @@ footer {
     }
     #show-more {
         font-size: calc(var(--size3) + var(--adaptive));
+    }
+    .main-header {
+        margin: 3% 20% auto;
     }
     
 }
