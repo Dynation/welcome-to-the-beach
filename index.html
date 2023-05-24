@@ -18,7 +18,7 @@
                     <button onclick="showMore()" class="button-more">read more</button>
                 </header>
             </div> 
-            <section id="show-more">
+            <section id="show-more" style="display: none">
                 <article class="painted">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minima molestias amet nulla ex accusamus deserunt dolorem fuga labore, voluptates repellat suscipit veniam quae, facilis omnis rerum incidunt expedita officiis.
                     Placeat, qui officia! Tempore aliquam sequi rerum tempora debitis cumque quae fugiat, nulla sed laborum adipisci officiis iste minus quasi deleniti, architecto minima? Ab animi harum explicabo quidem minima laborum.</p>
@@ -39,7 +39,7 @@
         function showMore() {
   var x = document.getElementById("show-more");
   if (x.style.display === "none") {
-    x.style.display = "block";
+    return x.style.display = "block";
   } else {
     x.style.display = "none";
   }

@@ -100,3 +100,9 @@ footer {
     }
     
 }
+
+@media (any-pointer: coarse) {
+    button-more{
+        appearance: none
+    }
+}
