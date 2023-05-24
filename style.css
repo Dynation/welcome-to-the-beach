@@ -4,6 +4,7 @@
     --main-color: #976234;
     --invert-color: aliceblue;
     --adaptive:calc((50 - 20)  * ((100vw - 320px) / (1920 -320)));
+    --size0:1px;
     --size1:10px;
     --size2:16px;
     --size3:20px;
@@ -14,9 +15,7 @@ h1 {
     font-size:calc(var(--size4) + var(--adaptive));
     text-transform: capitalize;
 }
-h3 {
-    
-}
+
 p {
     padding: 1.3%;
 }
@@ -75,6 +74,7 @@ footer {
 
 #show-more {
     display: none;
+    font-size: calc(var(--size0) + var(--adaptive));
 }
 
 @media screen and (min-width: 1921px) {
@@ -82,6 +82,21 @@ footer {
     .wrapper {
         font-size: calc(var(--size3) + var(--adaptive));
         
+    }
+
+    #show-more {
+        font-size: calc(var(--size3) + var(--adaptive));
+    }
+    
+}
+
+@media screen and (max-width: 678px) {
+    footer {
+        columns: 1;
+        font-size: calc(var(--size1) + var(--adaptive));
+    }
+    #show-more {
+        font-size: calc(var(--size3) + var(--adaptive));
     }
     
 }
