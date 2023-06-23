@@ -1,8 +1,10 @@
+ let x = document.getElementById("show-more");
+
 if(window.navigator.isActive){
 
   
 function showMore() {
-    let x = document.getElementById("show-more");
+   
 
          x.onclick.navigator.vibrate(500);
      
