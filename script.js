@@ -6,7 +6,7 @@ if(window.navigator.isActive){
 function showMore() {
    
 
-         x.onclick.navigator.vibrate(500);
+         x.touchend.navigator.vibrate(500);
      
         if (x.style.display === "none") {
       return x.style.display = "block";
